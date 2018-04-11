@@ -16,6 +16,6 @@ COPY requirements.txt /app/
 RUN pip3 install -r requirements.txt && \
     rm -rf /root/.cache/
 
-COPY l*.py /app/
+COPY mqtt-blinkt.py /app/
 
 CMD ["/app/mqtt-blinkt.py"]
