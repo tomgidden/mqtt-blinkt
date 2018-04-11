@@ -1,5 +1,5 @@
 NAME=mqtt-blinkt
-TAG=tomgidden/$(NAME)
+TAG=tomgidden/rpi-$(NAME)
 
 build: Dockerfile $(NAME).py
 	docker build . -t $(TAG)
